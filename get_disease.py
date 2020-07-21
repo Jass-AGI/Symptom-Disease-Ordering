@@ -3,8 +3,8 @@ import numpy as np
 from sklearn import tree
 from sklearn.ensemble import RandomForestClassifier
 
-data=pd.read_csv("./diffsydiw.csv")
-dia_t=pd.read_csv("./dia_t.csv")
+data=pd.read_csv("diffsydiw.csv")
+dia_t=pd.read_csv("dia_t.csv")
 disease_id={}
 id_disease={}
 
@@ -16,7 +16,7 @@ for i in range(dia_t.shape[0]):
     disease_id[dia_t.iloc[i].did]=dia_t.iloc[i].diagnose
     id_disease[dia_t.iloc[i].diagnose]=dia_t.iloc[i].did
 
-sym_t=pd.read_csv("./sym_t.csv")
+sym_t=pd.read_csv("sym_t.csv")
 sym_id={}
 id_sym={}
 
