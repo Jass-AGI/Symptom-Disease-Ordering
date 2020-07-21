@@ -146,4 +146,4 @@ def start2():
         
         return "You might be suffering from "+ dis[0]
 
-app.run(port=5000,debug=True)
+# app.run(port=5000,debug=True)
